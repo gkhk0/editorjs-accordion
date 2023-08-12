@@ -85,7 +85,7 @@ export default class Accordion {
   _make(tagName, classNames = null, attributes = {}) {
     const el = document.createElement(tagName);
 
-    if (Array.isArrat(classNames)) {
+    if (Array.isArray(classNames)) {
       el.classList.add(...classNames);
     } else if (classNames) {
       el.classList.add(classNames);
