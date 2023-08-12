@@ -1,13 +1,13 @@
 ![](https://badgen.net/badge/CodeX%20Editor/v2.0/blue)
 
-# Warning Tool
+# Accordion Tool
 
-Provides Warning Block for the [CodeX Editor](https://ifmo.su/editor). Block has title and message. It can be used, for example, for editorials notifications or appeals.
+Provides Accordion Block for the [CodeX Editor](https://ifmo.su/editor). Block has title and message.
 
 ![](assets/2d7b7bc1-ac46-4020-89c9-390d1a7297e2.jpg)
 
 ## Installation
-
+<!--
 ### Install via NPM
 
 Get the package
@@ -21,12 +21,13 @@ Include module at your application
 ```javascript
 const Warning = require('@editorjs/warning');
 ```
-
+-->
 ### Download to your project's source dir
 
 1. Upload folder `dist` from repository
 2. Add `dist/bundle.js` file to your page.
 
+<!--
 ### Load from CDN
 
 You can load specific version of package from [jsDelivr CDN](https://www.jsdelivr.com/package/npm/@editorjs/warning).
@@ -38,7 +39,7 @@ Then require this script on page with CodeX Editor.
 ```html
 <script src="..."></script>
 ```
-
+-->
 ## Usage
 
 Add a new Tool to the `tools` property of the CodeX Editor initial config.
@@ -49,7 +50,7 @@ var editor = CodexEditor({
   
   tools: {
     ...
-    warning: Warning,
+    accordion: Accordion,
   },
   
   ...
@@ -64,8 +65,8 @@ var editor = CodexEditor({
   
   tools: {
     ...
-    warning: {
-      class: Warning,
+    accordion: {
+      class: Accordion,
       inlineToolbar: true,
       shortcut: 'CMD+SHIFT+W',
       config: {
@@ -95,7 +96,7 @@ var editor = CodexEditor({
 
 ```json
 {
-    "type" : "warning",
+    "type" : "accordion",
     "data" : {
         "title" : "Note:",
         "message" : "Avoid using this method just for lulz. It can be very dangerous opposite your daily fun stuff."
