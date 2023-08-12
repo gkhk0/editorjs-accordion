@@ -67,7 +67,7 @@ export default class Accordion {
     message.dataset.placeholder = this.messagePlaceholder;
 
     container.appendChild(title);
-    container.appenChild(message);
+    container.appendChild(message);
 
     return container;
   }
